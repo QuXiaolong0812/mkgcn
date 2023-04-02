@@ -16,9 +16,9 @@ Designed by Qu Xiaolong in Beijing Forestry University.
     - `modals/`: 7 modals files for music-d dataset;
     - `data_config.py`: dataset configuration file;
 - `other .py files`: implementations of MKGCN4M.
->Attention: music-d is multi-modal music dataset by myself. Actually, we have created four multimodal 
+>Attention: music-d is multi-modal music dataset by myself. Actually, I have created four multimodal 
 > music datasets of different sizes, but due to the need for data copyright and confidentiality,
-> we only open the smallest one.
+> I only open the smallest one.
 
 
 ### Required packages
@@ -33,4 +33,4 @@ The code has been tested running under Python 3.6.5, with the following packages
 $ python main.py --dataset music-d (note: use -h to check optional arguments)
 ```
 ### Note
->We will update more information in the future, please stay tuned.
+>I will update more information in the future, please stay tuned.
