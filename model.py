@@ -60,8 +60,10 @@ class MKGCN(torch.nn.Module):
         elif self.user_aggregator == 'max-pool':
             user_embeddings = self.entity_embedding(user_history_items).permute(0, 2, 1)
             user_embeddings = self.max_pooling(user_embeddings).squeeze(-1)
-        else:
+        elif self.user_aggregator == 'mean-pool':
             user_embeddings = torch.mean( self.entity_embedding( user_history_items ), dim=1 )
+        else:
+            raise Exception("Unknown user aggregator: " + self.user_aggregator)
 
         entity_embeddings = self._multimodal_aggregate(entities)
 

@@ -30,7 +30,7 @@ class NeighborAggregator( torch.nn.Module ):
         elif self.neighbor_aggregator == 'neighbor':  # neighbors
             output = neighbors_agg.view((-1, self.dim))
         else:
-            raise Exception("Unknown item-entity aggregator: " + self.neighbor_aggregator)
+            raise Exception("Unknown entity aggregator: " + self.neighbor_aggregator)
 
         output = self.weights(output)
         return act_fn(output.view((self.batch_size, -1, self.dim)))

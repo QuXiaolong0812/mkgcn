@@ -34,7 +34,7 @@ class MultiModalAggregator(torch.nn.Module):
 			output = torch.mean( entities_with_mm_embedding, dim=2, keepdim=False )
 			output = (entities_embedding + output).view( (-1, self.dim) )
 		else:
-			raise Exception( "Unknown entity-multimodal aggregator: " + self.neighbor_aggregator )
+			raise Exception( "Unknown multimodal aggregator: " + self.multimodal_aggregator )
 		output = self.weights(output)
 		return torch.tanh(output.view((self.batch_size, -1, self.dim)))
 
