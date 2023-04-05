@@ -26,9 +26,9 @@ Multimodal files definition are shown as below:
 
 ### Required packages
 The code has been tested running under Python 3.6.5, with the following packages installed (along with their dependencies):
-- pytorch == 1.1.0
+- pytorch == 2.0.0
 - numpy == 1.14.5
-- sklearn == 0.19.1
+- sklearn == 0.24.2
 
 
 ### Running the code

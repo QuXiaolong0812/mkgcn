@@ -1,10 +1,12 @@
 import argparse
+import warnings
 from data_loader import MKGCNDataLoader
 from train import train
 from utils import args_print
 
-parser = argparse.ArgumentParser()
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
+parser = argparse.ArgumentParser()
 
 # music-d
 parser.add_argument( '--dataset', type=str, default='music-d', help='which dataset to use' )

@@ -7,6 +7,7 @@ from sklearn.model_selection import train_test_split
 from data import data_config
 from utils import reduce_dimensions, tenet_itemID2entityID
 
+
 class MKGCNDataset(Dataset):
 	def __init__(self, dataset):
 		self.dataset = dataset

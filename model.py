@@ -1,11 +1,10 @@
-import numpy as np
 import torch
 import random
 from neighbor_aggregator import NeighborAggregator
 from multimodal_aggregator import MultiModalAggregator
 
 
-# Multi-modal Knowledge Graph Convolutional Network
+# Multi-modal Knowledge Graph Convolutional Network for music
 class MKGCN(torch.nn.Module):
     def __init__(self, args, num_user, num_entity, num_relation, kg, user_history_dict, multimodal_dict, device):
         super(MKGCN, self).__init__()
