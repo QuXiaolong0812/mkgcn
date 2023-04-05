@@ -3,8 +3,8 @@
 This repository is the implementation of a multimodal Recommendation system:
 > MKGCN4M: Multi-modal Knowledge Graph Convolutional Networks for Music Recommendation System 
 
+![](https://static.qinux.top/mkgcn4m_github/framework-mkgcn4m.png)
 Designed by Qu Xiaolong in Beijing Forestry University.
-
 
 ### Files in the folder
 
@@ -20,6 +20,9 @@ Designed by Qu Xiaolong in Beijing Forestry University.
 > music datasets of different sizes, but due to the need for data copyright and confidentiality,
 > I only open the smallest one.
 
+Multimodal files definition are shown as below:
+
+![](https://static.qinux.top/mkgcn4m_github/modals_explanation.png)
 
 ### Required packages
 The code has been tested running under Python 3.6.5, with the following packages installed (along with their dependencies):
