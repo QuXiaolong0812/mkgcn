@@ -12,10 +12,10 @@ Designed by Qu Xiaolong in Beijing Forestry University.
   - `movie-d/`
     - `itemID2entityID.txt`: the mapping from item indices in the raw rating file to entity IDs in the KG;
     - `kg.txt`: knowledge graph file;
-    - `userID2itemID4ratings.csv`: raw rating file of MovieLens-1M;
+    - `userID2itemID4ratings.csv`: raw rating file of music-d;
     - `modals/`: 7 modals files for music-d dataset;
     - `data_config.py`: dataset configuration file;
-- `other .py files`: implementations of MKGCN4M.
+- `other .py files`: implementations of MKGCN.
 >Attention: music-d is multi-modal music dataset by myself. Actually, I have created four multimodal 
 > music datasets of different sizes, but due to the need for data copyright and confidentiality,
 > I only open the smallest one.
