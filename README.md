@@ -1,7 +1,7 @@
 # MKGCN4M
 
 This repository is the implementation of the MKGCN:
-> MKGCN: Multi-modal Knowledge Graph Convolutional Networks for Music Recommendation System 
+> MKGCN: Multi-modal Knowledge Graph Convolutional Networks for Music Recommender System 
 
 ![](https://static.qinux.top/mkgcn4m_github/framework-mkgcn4m.png)
 Designed by Qu Xiaolong in Beijing Forestry University.
