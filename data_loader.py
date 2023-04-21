@@ -166,7 +166,7 @@ class MKGCNDataLoader:
 	def load_modals_dict(self, args):
 		print('Loading modals ... ', end=' ')
 		modals = dict()
-		for i in args.modals:
+		for i in range(len(args.modals)):
 			with open(self.dataset_config[args.dataset]['modals_path'].format(str(i)), 'r') as f:
 				for line in f:
 					line = line.strip().split(self.dataset_config[args.dataset]['modals_sep'])
@@ -176,7 +176,7 @@ class MKGCNDataLoader:
 						modals[item_id] = [ [] for _ in range(len(args.modals))]
 					modals[item_id][i] = features
 		if args.dim < 300:
-			reduce_dim_modals = reduce_dimensions(modals, args.dim)
+			reduce_dim_modals = reduce_dimensions(modals, args.dim, args.modals)
 		else:
 			raise Exception( "Too large embedding dimensions for multimodal: " + args.dim )
 		tenet_modals = tenet_itemID2entityID(reduce_dim_modals, self. entity_encoder,self.dataset_config[args.dataset]['itemID2entityID_path'],
