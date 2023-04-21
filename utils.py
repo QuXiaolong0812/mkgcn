@@ -15,11 +15,11 @@ def args_print(args):
 	current_time = datetime.datetime.now()
 	print("model training start at time: " + current_time.strftime("%Y-%m-%d %H:%M:%S"))
 
-def reduce_dimensions(modal_dict, dim):
+def reduce_dimensions(modal_dict, dim, modals):
 	pca = PCA(n_components=dim)
 	modal_list = np.array(list(modal_dict.values()))
 	reduced_modal_list = []
-	for i in range(7):
+	for i in range(len(modals)):
 		reduced_modal_list.append(pca.fit_transform(modal_list[:, i, :]))
 	reduced_modal_list = np.transpose(reduced_modal_list, (1, 0, 2))
 	modal_dict_new = dict.fromkeys(modal_dict, None)
