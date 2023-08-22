@@ -9,7 +9,7 @@ Designed by Qu Xiaolong in Beijing Forestry University.
 ### Files in the folder
 
 - `data/`
-  - `movie-d/`
+  - `music-d/`
     - `itemID2entityID.txt`: the mapping from item indices in the raw rating file to entity IDs in the KG;
     - `kg.txt`: knowledge graph file;
     - `userID2itemID4ratings.csv`: raw rating file of music-d;
